@@ -6,6 +6,10 @@
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 h1 {
     margin: auto;
     color: rgb(73, 133, 218);
@@ -75,18 +79,20 @@ a:hover {
 
 .content-window {
     display: flex;
-    margin-top: 2vh;
-    border: 50%;
-    height: 93vh;
+    height: 90vh;
     width: 95vw;
     background-color: rgba(30, 30, 30, .9);
+}
+
+#welcome-window {
+    margin-top: 30px;
 }
 
 .section-transition {
     display: block;
     width: 100%;
-    height: 30px;
-    background-color: rgba(180, 158, 119, 1);
+    height: 20px;
+    background-color: rgb(73, 133, 218);
 }
 
 #projects {
@@ -94,15 +100,15 @@ a:hover {
     flex-direction: column;
     align-items: center;  
     background-image: url(/images/bg-projects.jpg);
-    image-resolution: 1vw 1vh;
     height: 100vh;
 }
 
 #projects-window {
     margin-top: 50px;
-    height: 93vh;
+    height: 90vh;
     display: grid;
     grid-template-rows: 15px auto;
+    padding: 10px;
 }
 
 #projects-grid {
@@ -113,9 +119,29 @@ a:hover {
     grid-gap: 10px 10px;
 }
 
-.project-box {
-    background-color: rgba(206, 206, 206, 0.75);
+.project-tile {
+    background-color: rgba(73, 133, 218, 0.75);
     text-align: center;
-    color: rgb(0, 42, 100);
+    color: rgb(255, 255, 255);
     font-family: 'Source Code Pro', monospace;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.project-tile img {
+    width: 100%;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-image: url(/images/bg-contacts.jpg);
+    height: 100vh;
+}
+
+#contacts-window {
+    margin-top: 50px;
+    padding: 10px;
 }
